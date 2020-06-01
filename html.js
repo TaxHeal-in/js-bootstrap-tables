@@ -152,7 +152,7 @@ function _getNode(type, paramObject) {
             ariaLabelledby,
             checked,
             className,
-            colSpan,
+            colspan,
             dataDismiss,
             dataParent,
             dataTarget,
@@ -169,7 +169,7 @@ function _getNode(type, paramObject) {
             placeholder,
             rel,
             role,
-            rowSpan,
+            rowspan,
             selected,
             src,
             style,
@@ -210,8 +210,8 @@ function _getNode(type, paramObject) {
         if (className) {
             node.setAttribute(`class`, className);
         }
-        if (colSpan) {
-            node.setAttribute(`colspan`, colSpan);
+        if (colspan) {
+            node.setAttribute(`colspan`, colspan);
         }
         if (dataDismiss) {
             node.setAttribute(`data-dismiss`, dataDismiss);
@@ -261,8 +261,8 @@ function _getNode(type, paramObject) {
         if (role) {
             node.setAttribute(`role`, role);
         }
-        if (rowSpan) {
-            node.setAttribute(`rowspan`, rowSpan);
+        if (rowspan) {
+            node.setAttribute(`rowspan`, rowspan);
         }
         if (selected) {
             node.setAttribute(`selected`, ``);
