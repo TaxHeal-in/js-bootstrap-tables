@@ -157,8 +157,8 @@ function _getNode(type, paramObject) {
             charset,
             checked,
             className,
-            content,
             colspan,
+            content,
             dataDismiss,
             dataParent,
             dataTarget,
@@ -220,11 +220,11 @@ function _getNode(type, paramObject) {
         if (className) {
             node.setAttribute(`class`, className);
         }
-        if (content) {
-            node.setAttribute(`content`, content);
-        }
         if (colspan) {
             node.setAttribute(`colspan`, colspan);
+        }
+        if (content) {
+            node.setAttribute(`content`, content);
         }
         if (dataDismiss) {
             node.setAttribute(`data-dismiss`, dataDismiss);
