@@ -86,6 +86,10 @@ function getLI(paramObject) {
     return _getNode(`li`, paramObject);
 }
 
+function getMeta(paramObject) {
+    return _getNode(`meta`, paramObject);
+}
+
 function getNav(paramObject) {
     return _getNode(`nav`, paramObject);
 }
@@ -150,8 +154,10 @@ function _getNode(type, paramObject) {
             ariaHidden,
             ariaLabel,
             ariaLabelledby,
+            charset,
             checked,
             className,
+            content,
             colspan,
             dataDismiss,
             dataParent,
@@ -167,6 +173,7 @@ function _getNode(type, paramObject) {
             method,
             name,
             placeholder,
+            property,
             rel,
             role,
             rowspan,
@@ -204,11 +211,17 @@ function _getNode(type, paramObject) {
         if (ariaLabelledby) {
             node.setAttribute(`aria-labelledby`, ariaLabelledby);
         }
+        if (charset) {
+            node.setAttribute(`charset`, charset);
+        }
         if (checked) {
             node.setAttribute(`checked`, ``);
         }
         if (className) {
             node.setAttribute(`class`, className);
+        }
+        if (content) {
+            node.setAttribute(`content`, content);
         }
         if (colspan) {
             node.setAttribute(`colspan`, colspan);
