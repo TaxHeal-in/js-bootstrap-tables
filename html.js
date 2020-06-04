@@ -268,6 +268,9 @@ function _getNode(type, paramObject) {
         if (placeholder) {
             node.setAttribute(`placeholder`, placeholder);
         }
+        if (property) {
+            node.setAttribute(`property`, property);
+        }
         if (rel) {
             node.setAttribute(`rel`, rel);
         }
