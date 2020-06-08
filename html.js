@@ -168,10 +168,9 @@ function _getNode(type, paramObject) {
             forName,
             height,
             href,
-            htmlFor,
             id,
-            itemProp,
-            itemScope,
+            itemprop,
+            itempcope,
             itemType,
             method,
             name,
@@ -256,16 +255,13 @@ function _getNode(type, paramObject) {
         if (href) {
             node.setAttribute(`href`, href);
         }
-        if (htmlFor) {
-            node.setAttribute(`for`, htmlFor);
-        }
         if (id) {
             node.setAttribute(`id`, id);
         }
-        if (itemProp) {
+        if (itemprop) {
             node.setAttribute(`itemprop`, ``);
         }
-        if (itemScope) {
+        if (itempcope) {
             node.setAttribute(`itemscope`, ``);
         }
         if (itemType) {
