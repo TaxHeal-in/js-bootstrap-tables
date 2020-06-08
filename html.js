@@ -168,6 +168,7 @@ function _getNode(type, paramObject) {
             height,
             href,
             id,
+            itemProp,
             itemScope,
             itemType,
             method,
@@ -252,6 +253,9 @@ function _getNode(type, paramObject) {
         }
         if (id) {
             node.setAttribute(`id`, id);
+        }
+        if (itemProp) {
+            node.setAttribute(`itemprop`, ``);
         }
         if (itemScope) {
             node.setAttribute(`itemscope`, ``);
