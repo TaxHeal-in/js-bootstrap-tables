@@ -170,8 +170,8 @@ function _getNode(type, paramObject) {
             href,
             id,
             itemprop,
-            itempcope,
-            itemType,
+            itemscope,
+            itemtype,
             method,
             name,
             placeholder,
@@ -261,11 +261,11 @@ function _getNode(type, paramObject) {
         if (itemprop) {
             node.setAttribute(`itemprop`, ``);
         }
-        if (itempcope) {
+        if (itemscope) {
             node.setAttribute(`itemscope`, ``);
         }
-        if (itemType) {
-            node.setAttribute(`itemtype`, itemType);
+        if (itemtype) {
+            node.setAttribute(`itemtype`, itemtype);
         }
         if (method) {
             node.setAttribute(`method`, method);
