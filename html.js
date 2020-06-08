@@ -259,7 +259,7 @@ function _getNode(type, paramObject) {
             node.setAttribute(`id`, id);
         }
         if (itemprop) {
-            node.setAttribute(`itemprop`, ``);
+            node.setAttribute(`itemprop`, itemprop);
         }
         if (itemscope) {
             node.setAttribute(`itemscope`, ``);
