@@ -1,7 +1,7 @@
 class Autocomplete
 {
 
-    autocomplete(inputField, deityObjectArray) {
+    autocomplete(inputField, objectArray) {
         inputField.addEventListener("input", function (event) {
             let dropDownParent, dropDownChild, searchVal = event.target.value;
             let { id, parentNode } = event.target
@@ -11,19 +11,19 @@ class Autocomplete
             }
             dropDownParent = getDiv({ id: `${id}autocomplete-list`, className: `autocomplete-items` })
             parentNode.appendChild(dropDownParent);
-            deityObjectArray.forEach(deityObject => {
-                if (deityObject.name.substr(0, searchVal.length).toUpperCase() == searchVal.toUpperCase()) {
+            objectArray.forEach(object => {
+                if (object.name.substr(0, searchVal.length).toUpperCase() == searchVal.toUpperCase()) {
                     dropDownChild = getDiv()
                     let strongTextNode = getStrong()
                     dropDownChild.appendChild(strongTextNode)
-                    let strongText = document.createTextNode(deityObject.name.substr(0, searchVal.length))
+                    let strongText = document.createTextNode(object.name.substr(0, searchVal.length))
                     strongTextNode.appendChild(strongText)
-                    dropDownChild.appendChild(document.createTextNode(deityObject.name.substr(searchVal.length)))
-                    let inputNode = getInput({ type: `hidden`, value: `${deityObject.name}` })
+                    dropDownChild.appendChild(document.createTextNode(object.name.substr(searchVal.length)))
+                    let inputNode = getInput({ type: `hidden`, value: `${object.name}` })
                     dropDownChild.appendChild(inputNode)
                     dropDownChild.addEventListener("click", function (e) {
                         inputField.value = this.getElementsByTagName("input")[0].value;
-                        document.getElementById(`deityId`).value = `${deityObject.id}`;
+                        document.getElementById(`deityId`).value = `${object.id}`; // if we need to get id of selected field
                         closeAllLists();
                     });
                     dropDownParent.appendChild(dropDownChild);
