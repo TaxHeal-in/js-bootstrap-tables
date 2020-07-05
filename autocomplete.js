@@ -1,4 +1,4 @@
-export default class Autocomplete
+class Autocomplete
 {
 
     autocomplete(inputField, deityObjectArray) {
