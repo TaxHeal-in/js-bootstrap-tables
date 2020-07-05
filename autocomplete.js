@@ -1,7 +1,7 @@
 class Autocomplete
 {
 
-    autocomplete(inputField, objectArray) {
+    autocomplete(inputField, objectArray,inputFieldId) {
         inputField.addEventListener("input", function (event) {
             let dropDownParent, dropDownChild, searchVal = event.target.value;
             let { id, parentNode } = event.target
@@ -23,7 +23,7 @@ class Autocomplete
                     dropDownChild.appendChild(inputNode)
                     dropDownChild.addEventListener("click", function (e) {
                         inputField.value = this.getElementsByTagName("input")[0].value;
-                        document.getElementById(`deityId`).value = `${object.id}`; // if we need to get id of selected field
+                        document.getElementById(inputFieldId).value = `${object.id}`; // if we need to get id of selected field
                         closeAllLists();
                     });
                     dropDownParent.appendChild(dropDownChild);
