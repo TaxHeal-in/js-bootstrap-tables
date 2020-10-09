@@ -6,7 +6,7 @@ class Autocomplete {
                 id,
                 parentNode
             } = event.target
-            closeAllLists();
+            closeAllLists();/*commit test*/
             if (!searchVal) {
                 return false;
             }
