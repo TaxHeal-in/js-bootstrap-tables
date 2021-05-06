@@ -164,6 +164,7 @@ function _getNode(type, paramObject) {
             className,
             colspan,
             content,
+            dataBSToggle,
             dataDismiss,
             dataParent,
             dataTarget,
@@ -235,6 +236,9 @@ function _getNode(type, paramObject) {
         }
         if (content) {
             node.setAttribute(`content`, content);
+        }
+        if (dataBSToggle) {
+            node.setAttribute(`data-bs-toggle`, dataBSToggle);
         }
         if (dataDismiss) {
             node.setAttribute(`data-dismiss`, dataDismiss);
