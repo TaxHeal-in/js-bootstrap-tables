@@ -347,7 +347,7 @@ class DynamicTable {
                 id = `${checkboxClass}_${trAttributes}`;
             }
             let checkboxNode = this._getNode(`input`, {
-                className: `form-control ${checkboxClass}`,
+                className: `form-check-input ${checkboxClass}`,
                 id,
                 type: `checkbox`
             });
