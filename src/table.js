@@ -126,7 +126,7 @@ class DynamicTable {
     }
     _getLimitNode() {
         let selectNode = this._getNode(`select`, {
-            className: `form-control`
+            className: `form-select`
         });
         this._addLimitOption(selectNode, 50, 50);
         this._addLimitOption(selectNode, 100, 100);
