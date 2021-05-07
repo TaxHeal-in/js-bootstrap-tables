@@ -98,7 +98,7 @@ class DynamicTable {
         this.divNode.appendChild(rowNode);
         this._addLimitFormNode(rowNode);
         let colNode = this._getNode(`div`, {
-            className: `col text-right`
+            className: `col text-end`
         });
         rowNode.appendChild(colNode);
         colNode.appendChild(this.countNode);
@@ -109,7 +109,7 @@ class DynamicTable {
             addLimit
         } = this.paramObject;
         let colNode = this._getNode(`div`, {
-            className: `col text-right`
+            className: `col text-end`
         });
         rowNode.appendChild(colNode);
         if (addLimit) {
