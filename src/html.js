@@ -173,9 +173,15 @@ function _getNode(type, paramObject) {
             dataBSTarget,
             dataBSToggle,
             dataDismiss,
+            dataLogoAlignment,
             dataParent,
+            dataShape,
+            dataSize,
             dataTarget,
+            dataText,
+            dataTheme,
             dataToggle,
+            dataType,
             disabled,
             forName,
             height,
@@ -259,14 +265,32 @@ function _getNode(type, paramObject) {
         if (dataDismiss) {
             node.setAttribute(`data-dismiss`, dataDismiss);
         }
+        if (dataLogoAlignment) {
+            node.setAttribute(`data-logo_alignment`, dataLogoAlignment);
+        }
         if (dataParent) {
             node.setAttribute(`data-parent`, dataParent);
+        }
+        if (dataShape) {
+            node.setAttribute(`data-shape`, dataShape);
+        }
+        if (dataSize) {
+            node.setAttribute(`data-size`, dataSize);
         }
         if (dataTarget) {
             node.setAttribute(`data-target`, dataTarget);
         }
+        if (dataText) {
+            node.setAttribute(`data-text`, dataText);
+        }
+        if (dataTheme) {
+            node.setAttribute(`data-theme`, dataTheme);
+        }
         if (dataToggle) {
             node.setAttribute(`data-toggle`, dataToggle);
+        }
+        if (dataType) {
+            node.setAttribute(`data-type`, dataType);
         }
         if (disabled) {
             node.setAttribute(`disabled`, ``);
