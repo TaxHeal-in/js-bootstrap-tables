@@ -102,6 +102,10 @@ function getOption(paramObject) {
     return _getNode(`option`, paramObject);
 }
 
+function getP(paramObject) {
+    return _getNode(`p`, paramObject);
+}
+
 function getSelect(paramObject) {
     return _getNode(`select`, paramObject);
 }
